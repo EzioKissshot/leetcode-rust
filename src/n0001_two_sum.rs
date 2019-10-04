@@ -21,8 +21,18 @@ pub struct Solution {}
 
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-        for (i, num_i) in nums.enumerate(){
-
+        for (i, num_i) in nums.iter().enumerate(){
+            for (j, num_j) in nums.iter().enumerate() {
+                if i==j {
+                    continue
+                }
+                if num_i + num_j == target {
+                    return vec![i as i32, j as i32]
+                }eles{
+                    return vec![1,1]
+                }
+                return vec![i as i32, j as i32]
+            }
         }
     }
 }
