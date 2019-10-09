@@ -28,14 +28,22 @@ impl Solution {
                 }
                 if num_i + num_j == target {
                     return vec![i as i32, j as i32]
-                }eles{
-                    return vec![1,1]
                 }
-                return vec![i as i32, j as i32]
             }
         }
+        unreachable!()
     }
 }
+
+
+pub fn two_sum2(nums: Vec<i32>, target: i32) -> usize {
+    for (index, num) in nums.iter().enumerate() {
+        println!("{}",num);
+        return num;
+    };
+    unreachable!()
+}
+
 
 // submission codes end
 
@@ -45,5 +53,7 @@ mod tests {
 
     #[test]
     fn test_1() {
+        let result = two_sum2(vec![111,222],333);
     }
+
 }
